@@ -1,8 +1,6 @@
 provider "aws" {
-  region = "eu-west-3"
-  assume_role {
-    role_arn = var.aws_ec2_admin_role_arn
-  }
+  region  = "eu-west-3"
+  profile = var.aws_ec2_admin_credentials_profile
   default_tags {
     tags = {
       "Component" = "Infra",

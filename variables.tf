@@ -4,9 +4,9 @@ variable "first_variable" {
   default     = "(default value)"
 }
 
-variable "aws_ec2_admin_role_arn" {
+variable "aws_ec2_admin_credentials_profile" {
   type        = string
-  description = "name ARN of the ec2 admin role"
+  description = "name of the profile in aws credentials file"
 }
 
 variable "aws_main_availability_zone_name" {
