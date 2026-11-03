@@ -1,2 +1,3 @@
 # Warming up the credentials
-Init the aws session token with `aws sts get-caller-identity --profile bsi-ec2-admin-role` (input the MFA when asked to)
+
+Terraform and MFA do not play well. A tested workaround is using aws-vault: https://github.com/hashicorp/terraform-provider-aws/issues/10491
